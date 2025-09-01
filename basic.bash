@@ -46,6 +46,6 @@ touch $scriptsPWD/$folderName/src/style.min.css &&
 npm run build &&
 git init &&
 git gui &
-npm run dev &&
+npm run dev
 
 
