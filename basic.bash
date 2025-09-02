@@ -23,26 +23,17 @@ cd $folderName &&
 #~ Install TailwindCSS
 npm install tailwindcss @tailwindcss/vite &&
 
-#~ OLD
-## Remove the last line
-#sed -i '$ d' vite.config.js &&
-## Customize file
-#echo "  root: ''," >> vite.config.js &&
-#echo "  build: {" >> vite.config.js &&
-#echo "    outDir: '../dist'," >> vite.config.js &&
-#echo "  }," >> vite.config.js &&
-#echo "});" >> vite.config.js &&
-
 #~ Backup file
 mv vite.config.js vite.config.js.bkp &&
 
-#> Copy the files
+#~ Copy the files
 cp -r $scriptsPWD/files/* $scriptsPWD/$folderName/ &&
 
 #~ Create css files
 touch $scriptsPWD/$folderName/src/style.scss &&
 touch $scriptsPWD/$folderName/src/style.min.css &&
 
+#~ Final process
 npm run build &&
 git init &&
 git gui

@@ -26,6 +26,11 @@ Run in terminal `./basic.bash`
 
 Will be created a **ready** folder with the dev files and the **dist** folder with the static files from npm build 
 
+#### NextJS + MDX (basic for now)
+Run in terminal `./nextjs-mdx.bash`
+
+Will be created a **ready-next** folder with the dev files
+
 #### Debian
 To install updated NPM 22 in Debian run `./debianNPM_22.sh`
 
@@ -37,3 +42,6 @@ To install updated NPM 22 in Debian run `./debianNPM_22.sh`
 - Jekyll like
 - Debian NPM
 - VSCODE SASS config
+- 
+# References
+[next-mdx-blog](https://github.com/leerob/next-mdx-blog)
