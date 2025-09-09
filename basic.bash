@@ -20,14 +20,16 @@ npm create vite@latest $folderName -- --template react-ts &&
 #~ Enter folder
 cd $folderName &&
 
-#~ Install TailwindCSS
-npm install tailwindcss @tailwindcss/vite &&
+#~ Install TailwindCSS multipages motion 
+npm install tailwindcss @tailwindcss/vite @types/node motion &&
 
 #~ Backup file
-mv vite.config.js vite.config.js.bkp &&
+mv vite.config.ts vite.config.ts.bkp &&
 
 #~ Copy the files
+echo "cp -r $scriptsPWD/files/* $scriptsPWD/$folderName/"
 cp -r $scriptsPWD/files/* $scriptsPWD/$folderName/ &&
+
 
 #~ Create css files
 touch $scriptsPWD/$folderName/src/style.scss &&

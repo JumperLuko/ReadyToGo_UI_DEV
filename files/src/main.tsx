@@ -5,24 +5,36 @@ import './tailwind.css'
 
 //~ Ready to use
 
-// import NavMenu from './components/NavMenu.jsx'
-// import Tests from './components/Tests.jsx'
-// import Center from './components/Center.jsx'
-// import Article from './components/Article.jsx'
-// import Footer from './components/Footer.jsx'
+// import { spring } from "motion"
+// import NavMenu from './components/NavMenu.tsx'
+// import Tests from './components/Tests.tsx'
+// import Center from './components/Center.tsx'
+// import Article from './components/Article.tsx'
+// import Footer from './components/Footer.tsx'
 
 // createRoot(document.getElementById('root')!).render(
-//   <StrictMode>
-//     <NavMenu />
-//     <Tests />
-//     <Center />
-//     <Article />
-//     <Footer />
-//   </StrictMode>,
+//   <>
+//     <StrictMode>
+//       <NavMenu />
+//       <Tests />
+//       <Center />
+//       <Article />
+//       <Footer />
+//     </StrictMode>
+//     <a href='/pages/animations/'>Animations</a>
+//     <div className='bg-amber-200 w-fit h-fit'>Tailwind background test</div>
+//     <style>
+//       {`
+//         * {
+//           // transition: all ${spring({ keyframes: [0,1], stiffness: 300, damping: 20, mass: 10 })};
+//         }
+//       `}
+//     </style>
+//   </>
 // )
 
 //~ Comment this
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
   <>
     <StrictMode>
       <App />
@@ -30,5 +42,5 @@ createRoot(document.getElementById('root')).render(
   </>
 )
 
-import App from './App.jsx'
+import App from './App.tsx'
 import './index.css'

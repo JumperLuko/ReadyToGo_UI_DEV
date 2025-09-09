@@ -3,8 +3,8 @@ function Article() {
         <>
             <article>
                 <header>
-                    <h1></h1>
-                    <p></p>
+                    <h1>Article Title</h1>
+                    <p>Article Paragraph</p>
                 </header>
                 <p></p>
             </article>
