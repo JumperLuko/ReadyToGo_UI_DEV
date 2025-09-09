@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './tailwind.css'
-import './style.min.css'
+// import './style.min.css'
 
 //~ Ready to use
 
@@ -11,7 +11,7 @@ import './style.min.css'
 // import Article from './components/Article.jsx'
 // import Footer from './components/Footer.jsx'
 
-// createRoot(document.getElementById('root')).render(
+// createRoot(document.getElementById('root')!).render(
 //   <StrictMode>
 //     <NavMenu />
 //     <Tests />
@@ -23,9 +23,11 @@ import './style.min.css'
 
 //~ Comment this
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <>
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  </>
 )
 
 import App from './App.jsx'

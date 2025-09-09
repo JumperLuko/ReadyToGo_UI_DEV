@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo ""
+echo "Doing: Vite, react, Typescritp, tailwindcss, sass, GIT"
+echo ""
+read -p "Enter a name folder (lowercase) or just press enter: " folderName
+
 # Apply folder name if is not set
 if [ ! -n "${folderName:-}" ]; then
   folderName="ready"
@@ -9,13 +14,8 @@ if [ ! -n "${scriptsPWD:-}" ]; then
   scriptsPWD=$(pwd)
 fi
 
-echo ""
-echo "Doing: Vite, react, tailwindcss, sass, GIT"
-echo ""
-read -p "Enter to continue..."
-
 #~ Create template Vite = React
-npm create vite@latest $folderName -- --template react &&
+npm create vite@latest $folderName -- --template react-ts &&
 
 #~ Enter folder
 cd $folderName &&

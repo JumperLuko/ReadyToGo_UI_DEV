@@ -4,6 +4,7 @@ Just script to do the basic work to start a Web dev easy
 ## Basic Usage include
 - Vite
 - React
+- TypeScript
 - TailwinCSS
     * Clean, without default styles
 - Export static files in build
